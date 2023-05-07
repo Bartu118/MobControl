@@ -9,7 +9,9 @@ public class dusmanScript : MonoBehaviour
     public Transform spawnPoint;
     public float spawnInterval = 1f;
     public float soldierSpeed = 5f;
-
+    public float spawnPointx;
+    public float spawnPointy;
+    public float spawnPointz;
     private Transform playerTransform;
     private float timer = 0f;
 
@@ -30,8 +32,8 @@ public class dusmanScript : MonoBehaviour
 
     void SpawnSoldier()
     {
-        Vector3 spawnPosition = transform.position + new Vector3(0f, 1f, 0f);
-        spawnPosition.y = playerTransform.position.y;
+        Vector3 spawnPosition = transform.position + new Vector3(spawnPointx, spawnPointy, spawnPointz);
+        //spawnPosition.y = playerTransform.position.y;
         GameObject soldier = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
         EnemyController EnemyController = soldier.GetComponent<EnemyController>();
         EnemyController.target = playerTransform;

@@ -23,12 +23,14 @@ public class SoldierController : MonoBehaviour
     {
         targetPosition = target;
     }
-    public GameObject karakter;
+    
+    public GameObject dusman;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            Destroy(karakter);
+            Destroy(asker);
+            Destroy(dusman);
 
         }
     }

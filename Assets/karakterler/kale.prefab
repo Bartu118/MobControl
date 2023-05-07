@@ -98,8 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d489e4d5aaf754bab1555d4654c194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 0}
-  playerTransform: {fileID: 0}
+  enemyPrefab: {fileID: 1197218631714037698, guid: 9884a52b7e1bf5347a61e874cc0d1f6e, type: 3}
+  playerTransform: {fileID: 6252904484281437065, guid: a69fe3ee80580fa49bf8187dae672dd3, type: 3}
+  spawnPointx: 0
+  spawnPointy: 0
+  spawnPointz: 0
   enemySpeed: 5
   spawnDistance: 10
   spawnInterval: 2
@@ -116,10 +119,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132ea1f3950db0e428b0b0d29a410d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 0}
-  spawnPoint: {fileID: 0}
+  enemyPrefab: {fileID: 1197218631714037698, guid: 9884a52b7e1bf5347a61e874cc0d1f6e, type: 3}
+  spawnPoint: {fileID: 6252904484281437065, guid: a69fe3ee80580fa49bf8187dae672dd3, type: 3}
   spawnInterval: 0.1
   soldierSpeed: 15
+  spawnPointx: 0
+  spawnPointy: 0
+  spawnPointz: 0
 --- !u!65 &3777531606706996845
 BoxCollider:
   m_ObjectHideFlags: 0

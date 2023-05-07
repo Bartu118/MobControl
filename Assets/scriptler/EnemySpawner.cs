@@ -6,6 +6,9 @@ public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemyPrefab;
     public Transform playerTransform;
+    public float spawnPointx;
+    public float spawnPointy;
+    public float spawnPointz;
     public float enemySpeed = 5f;
     public float spawnDistance = 10f;
     public float spawnInterval = 4f;
@@ -48,7 +51,7 @@ public class EnemySpawner : MonoBehaviour
         //Vector3 spawnPosition = transform.position + transform.forward * spawnDistance;
         //spawnPosition.y = playerTransform.position.y;
 
-        Vector3 spawnPosition = transform.position + new Vector3(0f, 2f, 0f);
+        Vector3 spawnPosition = transform.position + new Vector3(spawnPointx,spawnPointy,spawnPointz);
         spawnPosition.y = playerTransform.position.y;
 
         // Instantiate the soldier and set its target and speed
