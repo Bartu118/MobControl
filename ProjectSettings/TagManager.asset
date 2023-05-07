@@ -7,6 +7,12 @@ TagManager:
   - Enemy
   - asker
   - character
+  - Kale1
+  - Kale2
+  - kale1Pozisyon
+  - kale2Pozisyon
+  - CloneTrigger
+  - CloneTrigger2
   layers:
   - Default
   - TransparentFX
