@@ -8,20 +8,18 @@ public class canonScript : MonoBehaviour
     public GameObject soldierPrefab;
     public float moveSpeed = 10f;
     private float spawnInterval = 0.1f;
-    private float spawnRadius = 0.01f;
+    private float spawnRadius = 0f;
     public GameObject enemy;
-    public float spawnPointx;
-    public float spawnPointy;
-    public float spawnPointz;
+    public float spawnPointOffset = 0f;
+
     private Vector3 moveDirection;
     private float spawnTimer;
-
-    
 
     void Start()
     {
         transform.position = new Vector3(0f, 1f, 0f);
     }
+
     void Update()
     {
         // Read mouse input
@@ -31,19 +29,13 @@ public class canonScript : MonoBehaviour
         moveDirection = new Vector3(mouseX, 0, 0);
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
 
-
-
-
-
-
         // Spawn soldiers
         if (Input.GetMouseButton(0))
         {
             spawnTimer += Time.deltaTime;
             if (spawnTimer >= spawnInterval)
             {
-                // Check for nearby soldiers
-                Vector3 spawnPosition = transform.position + new Vector3(spawnPointx, spawnPointy, spawnPointz);
+                Vector3 spawnPosition = transform.position + moveDirection.normalized * spawnPointOffset;
                 bool canSpawn = !Physics.CheckSphere(spawnPosition, spawnRadius);
 
                 // Spawn soldier if there are no nearby soldiers

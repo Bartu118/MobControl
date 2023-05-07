@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &21482409 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7523998150645134158, guid: 84768330088a6254fa480c2c047ab0ab, type: 3}
+  m_PrefabInstance: {fileID: 7523998149609230523}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &218480976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -413,31 +418,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2097113004350388169, guid: d2f9e12b4b93ff24b8e4907412a808e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.24
+      value: 12.35
       objectReference: {fileID: 0}
     - target: {fileID: 2097113004350388169, guid: d2f9e12b4b93ff24b8e4907412a808e4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15.933192
+      value: -13.87
       objectReference: {fileID: 0}
     - target: {fileID: 2097113004350388169, guid: d2f9e12b4b93ff24b8e4907412a808e4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9944414
       objectReference: {fileID: 0}
     - target: {fileID: 2097113004350388169, guid: d2f9e12b4b93ff24b8e4907412a808e4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.1052917
       objectReference: {fileID: 0}
     - target: {fileID: 2097113004350388169, guid: d2f9e12b4b93ff24b8e4907412a808e4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2097113004350388169, guid: d2f9e12b4b93ff24b8e4907412a808e4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2097113004350388169, guid: d2f9e12b4b93ff24b8e4907412a808e4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 12.088
       objectReference: {fileID: 0}
     - target: {fileID: 2097113004350388169, guid: d2f9e12b4b93ff24b8e4907412a808e4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -596,7 +601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5600471329425943908, guid: b2c4fbaf307010f4abcea380e2af58d7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.75
+      value: -29.11
       objectReference: {fileID: 0}
     - target: {fileID: 5600471329425943908, guid: b2c4fbaf307010f4abcea380e2af58d7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -627,9 +632,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5600471329425943909, guid: b2c4fbaf307010f4abcea380e2af58d7, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5600471329425943909, guid: b2c4fbaf307010f4abcea380e2af58d7, type: 3}
       propertyPath: dusman
       value: 
       objectReference: {fileID: 1980488836}
+    - target: {fileID: 5600471329425943909, guid: b2c4fbaf307010f4abcea380e2af58d7, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 21482409}
     - target: {fileID: 5600471329425943909, guid: b2c4fbaf307010f4abcea380e2af58d7, type: 3}
       propertyPath: moveSpeed
       value: 15
@@ -760,6 +773,18 @@ PrefabInstance:
       propertyPath: soldierPrefab
       value: 
       objectReference: {fileID: 1830294486}
+    - target: {fileID: 7341433038922287445, guid: d1ab5fc802659f943a3fbd3d58c75df1, type: 3}
+      propertyPath: spawnLocation
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341433038922287445, guid: d1ab5fc802659f943a3fbd3d58c75df1, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 21482409}
+    - target: {fileID: 7341433038922287445, guid: d1ab5fc802659f943a3fbd3d58c75df1, type: 3}
+      propertyPath: spawnPointOffset
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7341433038922287464, guid: d1ab5fc802659f943a3fbd3d58c75df1, type: 3}
       propertyPath: m_Name
       value: canon
@@ -838,6 +863,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: kale
       objectReference: {fileID: 0}
+    - target: {fileID: 7523998150645134154, guid: 84768330088a6254fa480c2c047ab0ab, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 7523998150645134156, guid: 84768330088a6254fa480c2c047ab0ab, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -849,7 +878,7 @@ PrefabInstance:
     - target: {fileID: 7523998150645134156, guid: 84768330088a6254fa480c2c047ab0ab, type: 3}
       propertyPath: playerTransform
       value: 
-      objectReference: {fileID: 518620684}
+      objectReference: {fileID: 6252904484281437065, guid: a69fe3ee80580fa49bf8187dae672dd3, type: 3}
     - target: {fileID: 7523998150645134157, guid: 84768330088a6254fa480c2c047ab0ab, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -919,6 +948,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: dusman
       objectReference: {fileID: 0}
+    - target: {fileID: 8993871529309126471, guid: 034430ac093d3f544ae19f0e283fde45, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8993871529309126475, guid: 034430ac093d3f544ae19f0e283fde45, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -933,7 +966,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8993871529309126475, guid: 034430ac093d3f544ae19f0e283fde45, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 96.31
+      value: 100.1
       objectReference: {fileID: 0}
     - target: {fileID: 8993871529309126475, guid: 034430ac093d3f544ae19f0e283fde45, type: 3}
       propertyPath: m_LocalRotation.w

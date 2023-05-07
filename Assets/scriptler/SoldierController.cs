@@ -9,6 +9,8 @@ public class SoldierController : MonoBehaviour
     public GameObject asker;
     private Vector3 targetPosition;
 
+    public float speed;
+    public Transform target;
     void Update()
     {
         // Move towards the target position
@@ -29,8 +31,10 @@ public class SoldierController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            Destroy(asker);
-            Destroy(dusman);
+            //Destroy(asker);
+            //Destroy(dusman);
+            Destroy(gameObject);
+            Destroy(other.gameObject);
 
         }
     }
