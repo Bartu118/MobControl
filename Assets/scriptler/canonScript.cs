@@ -29,8 +29,10 @@ public class canonScript : MonoBehaviour
         
     }
 
+
     void Update()
     {
+
 
         if (lookAround)
         {
@@ -43,7 +45,7 @@ public class canonScript : MonoBehaviour
             {
                 Movement2();
             }
-
+            
             // Read mouse input
             float mouseX = Input.GetAxis("Mouse X");
 
@@ -63,7 +65,7 @@ public class canonScript : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, GameObject.FindWithTag("kale1Pozisyon").transform.position, 10 * Time.deltaTime);
             if (transform.position == GameObject.FindWithTag("kale1Pozisyon").transform.position)
             {
-                transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+                //transform.rotation = Quaternion.Euler(0f, 0f, 0f);
                 kale1Pozisyon = false;
                 lookAround = true;
             }

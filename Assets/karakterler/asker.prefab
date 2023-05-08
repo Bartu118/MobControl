@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 2947248404514348371}
   - component: {fileID: 5600471329425943913}
   - component: {fileID: 5600471329425943906}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: asker
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -102,7 +102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88d52421ade24d34db53eebd7a306d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {fileID: 0}
 --- !u!114 &480417988223579727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +114,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52734139a05665147b58a6f37e3ff550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {fileID: 0}
 --- !u!114 &5600471329425943909
 MonoBehaviour:
   m_ObjectHideFlags: 0

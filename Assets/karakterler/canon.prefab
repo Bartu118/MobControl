@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7341433038922287466}
   - component: {fileID: 7341433038922287465}
   - component: {fileID: 7341433038922287445}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,4 +113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soldierPrefab: {fileID: 0}
   moveSpeed: 15
-  enemy: {fileID: 0}
+  spawnPointOffset: 0
+  kale1Pozisyon: 1
+  kale2Pozisyon: 1
+  lookAround: 1
+  speed: 10
