@@ -13,6 +13,7 @@ TagManager:
   - kale2Pozisyon
   - CloneTrigger
   - CloneTrigger2
+  - CloneTrigger3
   layers:
   - Default
   - TransparentFX
