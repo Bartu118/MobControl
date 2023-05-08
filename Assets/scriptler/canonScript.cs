@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class canonScript : MonoBehaviour
 {
@@ -50,32 +51,38 @@ public class canonScript : MonoBehaviour
             moveDirection = new Vector3(mouseX, 0, 0);
             transform.position += moveDirection * moveSpeed * Time.deltaTime;
 
-            //  bu 2 if kodunu ekledim
-            if (GameObject.FindWithTag("Kale1") == null && kale1Pozisyon)
-            {
-                lookAround = false;
-                transform.position = Vector3.MoveTowards(transform.position, GameObject.FindWithTag("kale1Pozisyon").transform.position, 10 * Time.deltaTime);
-                if (transform.position == GameObject.FindWithTag("kale1Pozisyon").transform.position)
-                {
-                    transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-                    kale1Pozisyon = false;
-                    lookAround = true;
-                }
-                if (GameObject.FindWithTag("Kale2") == null && kale2Pozisyon)
-                {
-                    lookAround = false;
-                    transform.position = Vector3.MoveTowards(transform.position, GameObject.Find("Kale2Pozisyon").transform.position, 10 * Time.deltaTime);
-                    if (transform.position == GameObject.Find("Kale2Pozisyon").transform.position)
-                    {
-                        kale2Pozisyon = false;
-                        lookAround = true;
-                    }
-                }
 
-            }
 
 
         }
+        //  bu 2 if kodunu ekledim
+        if (GameObject.FindWithTag("Kale1") == null && kale1Pozisyon)
+        {
+
+            lookAround = false;
+            transform.position = Vector3.MoveTowards(transform.position, GameObject.FindWithTag("kale1Pozisyon").transform.position, 10 * Time.deltaTime);
+            if (transform.position == GameObject.FindWithTag("kale1Pozisyon").transform.position)
+            {
+                transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+                kale1Pozisyon = false;
+                lookAround = true;
+            }
+
+
+
+        }
+        if (GameObject.FindWithTag("Kale2") == null && kale2Pozisyon)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            lookAround = false;
+            transform.position = Vector3.MoveTowards(transform.position, GameObject.Find("kale2Pozisyon").transform.position, 10 * Time.deltaTime);
+            if (transform.position == GameObject.Find("kale2Pozisyon").transform.position)
+            {
+                kale2Pozisyon = false;
+                lookAround = true;
+            }
+        }
+
         // Spawn soldiers
         if (Input.GetMouseButton(0))
         {

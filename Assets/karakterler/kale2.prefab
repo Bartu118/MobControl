@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4397690729291673892}
   - component: {fileID: 6384799075304086227}
   - component: {fileID: 383740779653496811}
+  - component: {fileID: 4669642757798675070}
   - component: {fileID: 5790851471591717639}
   m_Layer: 0
   m_Name: kale2
@@ -113,6 +114,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 0}
   spawnPoint: {fileID: 8057948961241859741}
+  spawnInterval: 1
+  soldierSpeed: 5
+  spawnPointx: 0
+  spawnPointy: 0
+  spawnPointz: 0
+--- !u!114 &4669642757798675070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7626501711641858647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7012cf2c75173584f8a77209a24aacc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 0}
+  spawnPoint: {fileID: 0}
   spawnInterval: 1
   soldierSpeed: 5
   spawnPointx: 0
