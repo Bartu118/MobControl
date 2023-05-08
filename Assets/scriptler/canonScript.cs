@@ -25,7 +25,7 @@ public class canonScript : MonoBehaviour
 
     void Start()
     {
-        transform.position = new Vector3(0f, 1f, 0f);
+        //transform.position = new Vector3(0f, 1f, 0f);
         
     }
 
